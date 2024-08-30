@@ -1,0 +1,22 @@
+[
+    {
+      "image": "filtro.jpg",
+      "title": "Filtración Industrial",
+      "text": "Diseño, fabricación y suministro de filtros industriales personalizados y piezas de repuesto, optimizados para mejorar la eficiencia operativa y prolongar la vida útil del equipo."
+    },
+    {
+      "image": "metalmec.jpg",
+      "title": "Metalmecánica",
+      "text": "Producción de piezas y repuestos de alta precisión para maquinaria industrial, garantizando calidad y durabilidad para maximizar la productividad de su equipo."
+    },
+    {
+      "image": "autom.jpg",
+      "title": "Automatización TI",
+      "text": "Automatización integral y análisis de procesos empresariales, implementando soluciones de TI avanzadas para optimizar operaciones y reducir costos."
+    },
+    {
+      "image": "cloud.jpg",
+      "title": "Soluciones en la Nube",
+      "text": "Servicios de migración de infraestructura desde entornos on-premise a la nube, incluyendo soluciones híbridas para mejorar la flexibilidad, escalabilidad y seguridad."
+    }
+  ]

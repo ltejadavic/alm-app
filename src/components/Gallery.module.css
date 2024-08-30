@@ -1,0 +1,64 @@
+.gallery {
+    padding: 50px 0; /* Espaciado superior e inferior para la sección */
+    display: flex;
+    flex-direction: column; /* Alineación en columna para centrar el título y carrusel */
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%; /* Padding de 10% a cada lado */
+  }
+  
+  .section-title {
+    margin-bottom: 30px; /* Espacio debajo del título principal */
+    text-align: center;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem; /* Tamaño del título principal */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; /* Negrita para el título principal */
+  }
+  
+  .carousel-container {
+    position: relative; /* Posicionamiento relativo para las flechas de navegación */
+    width: 100%;
+    max-width: 800px; /* Ancho máximo del carrusel */
+    overflow: hidden; /* Oculta las imágenes fuera del área visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-image {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    max-height: 400px; /* Ajusta la imagen a la altura máxima */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortar */
+    transition: opacity 0.5s ease; /* Transición suave para las imágenes */
+    border-radius: 15px; /* Bordes redondeados para las imágenes */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    user-select: none;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-button:first-of-type {
+    left: 10px; /* Botón izquierdo */
+  }
+  
+  .carousel-button:last-of-type {
+    right: 10px; /* Botón derecho */
+  }

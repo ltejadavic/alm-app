@@ -1,0 +1,64 @@
+.nosotros {
+    padding: 50px 0; /* Espaciado superior e inferior para la sección */
+    display: flex;
+    flex-direction: column; /* Alineación en columna para centrar el título y contenedores */
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%; /* Padding de 15% a cada lado */
+    margin-bottom: 50px; /* Margen inferior agregado para espaciar las secciones */
+  }
+  
+  .section-title {
+    margin-bottom: 30px; /* Espacio debajo del título principal */
+    text-align: center;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem; /* Tamaño del título principal */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; /* Negrita para el título principal */
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Alinea la altura del texto e imagen */
+    width: 100%;
+    gap: 20px; /* Espaciado entre contenedores */
+  }
+  
+  /* Contenedor de texto */
+  .text-container {
+    flex: 1; /* Toma el 50% del ancho en pantallas grandes */
+    font-family: 'Roboto', sans-serif;
+    text-align: justify; /* Texto justificado */
+    line-height: 1.6; /* Espaciado entre líneas */
+  }
+  
+  /* Contenedor de imagen */
+  .image-container {
+    flex: 1; /* Toma el 50% del ancho en pantallas grandes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nosotros-image {
+    width: 100%;
+    height: auto; /* Altura automática para mantener la relación de aspecto */
+    max-height: 100%; /* Ajusta la imagen a la altura del contenedor de texto */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+    border-radius: 15px; /* Bordes redondeados para las imágenes */
+  }
+  
+  /* Responsividad para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column; /* Cambia a columna para pantallas pequeñas */
+    }
+  
+    .text-container,
+    .image-container {
+      width: 100%;
+    }
+  }

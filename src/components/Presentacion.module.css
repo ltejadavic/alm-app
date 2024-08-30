@@ -1,0 +1,61 @@
+.presentation {
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-image: url('/images/background.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Alineación en columna para centrar ambos mensajes */
+  }
+  
+  .presentation-content {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+  }
+  
+  .presentation-content h1 {
+    font-size: 3rem; /* Tamaño del texto más grande */
+    margin-bottom: 1rem;
+  }
+  
+  .presentation-content p {
+    font-size: 1rem; /* Tamaño del texto más pequeño */
+    font-family: 'Roboto', sans-serif;
+    text-align: justify; /* Justificación del texto */
+    padding: 0 20%; /* Padding de 15% a cada lado */
+  }
+  
+  .more-info-container {
+    margin-top: 2rem;
+  }
+  
+  .more-info {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none; /* Sin subrayado por defecto */
+    cursor: pointer;
+    position: relative; /* Necesario para el efecto hover */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .more-info::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; /* Transición para el subrayado */
+  }
+  
+  .more-info:hover::after {
+    width: 100%; /* Se subraya cuando se hace hover */
+  }

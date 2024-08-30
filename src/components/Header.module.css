@@ -1,0 +1,147 @@
+.header {
+  background-color: #5f5d7f; /* Color de fondo */
+  display: flex;
+  padding: 0 20px; /* Espacio a los lados */
+  height: auto; /* Ajuste automático según el tamaño del logo */
+  align-items: center; /* Alineación vertical */
+  font-family: 'Montserrat', sans-serif; /* Fuente primaria para el header */
+  position: sticky; /* Hace que el header sea fijo (sticky) */
+  top: 0; /* Se adhiere a la parte superior de la página */
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  max-height: 100px;
+  width: auto;
+}
+
+.menu-container {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  position: relative;
+  font-family: 'Montserrat', sans-serif; /* Fuente primaria para los elementos del menú */
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.login-container {
+  margin-left: auto;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 10px; /* Espacio entre el ícono y el texto */
+  flex-direction: column; /* Cambia la dirección a columna para poner el ícono encima del texto */
+}
+
+.login-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column; /* Alineación en columna para el ícono y el texto */
+  align-items: center;
+  gap: 5px; /* Espacio entre el ícono y el texto */
+}
+
+.login-icon {
+  width: 36px; /* Ajusta el tamaño del ícono */
+  height: 36px;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #5f5d7f;
+    gap: 0;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  .login-container {
+    display: none; /* Oculta el contenedor de login cuando el menú está en modo móvil */
+  }
+
+  .login-menu-item {
+    display: flex;
+    flex-direction: column; /* Alineación en columna para el ícono y el texto en el menú hamburguesa */
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  .login-menu-item img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px; /* Espacio entre el ícono y el texto */
+  }
+}

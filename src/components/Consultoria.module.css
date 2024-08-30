@@ -1,0 +1,72 @@
+.consultoria {
+    padding: 50px 0; /* Espaciado superior e inferior para la sección */
+    display: flex;
+    flex-direction: column; /* Alineación en columna para centrar el título y contenedores */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-title {
+    margin-bottom: 30px; /* Espacio debajo del título principal */
+    text-align: center;
+  }
+  
+  .section-title h2 {
+    font-size: 2rem; /* Tamaño del título principal */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; /* Negrita para el título principal */
+  }
+  
+  .consultoria-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+    gap: 20px; /* Espaciado entre las columnas */
+    padding: 0 10%; /* Padding de 10% a cada lado */
+  }
+  
+  /* Responsividad para pantallas más pequeñas */
+  @media (max-width: 1024px) {
+    .consultoria-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas para pantallas medianas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .consultoria-container {
+      grid-template-columns: 1fr; /* 1 columna para pantallas pequeñas */
+    }
+  }
+  
+  .consultoria-item {
+    background-color: white;
+    padding: 20px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para el contenedor */
+    cursor: pointer; /* Cursor de mano para indicar que es clicable */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el efecto hover */
+  }
+  
+  .hover-effect:hover {
+    transform: translateY(-5px); /* Mueve ligeramente hacia arriba al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa para el efecto hover */
+  }
+  
+  .consultoria-image {
+    width: 100%; /* Imagen ocupa el ancho completo del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Cubre el contenedor sin distorsionar la imagen */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+    border-radius: 15px; /* Bordes redondeados para las imágenes */
+  }
+  
+  .consultoria-item h3 {
+    margin: 0 0 10px 0; /* Espacio debajo del título */
+    font-family: 'Montserrat', sans-serif; /* Fuente primaria */
+    font-weight: bold; /* Negrita para el título dentro de los contenedores */
+  }
+  
+  .consultoria-item p {
+    margin: 0; /* Sin margen extra para el párrafo */
+    font-family: 'Roboto', sans-serif; /* Fuente secundaria */
+  }
